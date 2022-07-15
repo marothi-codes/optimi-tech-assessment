@@ -7,6 +7,19 @@ dotenv.config({ path: '../.env' }); // Preload process.env with the defined envi
 // Define an instance of the express server.
 const app = express();
 
+// CORS configuration.
+app.use((_, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+
+  app.options('*', (_, res) => {
+    // Allowed XHR methods.
+    res.header('Access-Control-Allow-Methods', 'GET');
+    res.send();
+  });
+});
+
 // Express Middleware configuration.
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
