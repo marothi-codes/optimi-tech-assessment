@@ -1,4 +1,4 @@
-data = [
+const data = [
   {
     id: 736,
     name: 'Systems',
@@ -38,7 +38,7 @@ data = [
     id: 44315,
     name: 'User Agents',
     image: {
-      link: ' https://cdn.pixabay.com/photo/2018/09/24/08/31/pixel-cells-3699334_960_720.png',
+      link: 'https://cdn.pixabay.com/photo/2018/09/24/08/31/pixel-cells-3699334_960_720.png',
     },
     groups: [
       {
@@ -70,3 +70,5 @@ data = [
     url: 'https://wwww.itschools.co.za/tools',
   },
 ];
+
+export default data;
