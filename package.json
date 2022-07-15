@@ -1,6 +1,7 @@
 {
   "name": "optimi-project-manager",
   "version": "1.0.0",
+  "type": "module",
   "description": "A React.js frontend and Node,js express server based project for a technical assessment.",
   "main": "index.js",
   "scripts": {
